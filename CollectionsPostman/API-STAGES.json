@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "f3897307-fb9d-4b08-aa81-3e611fbc1b63",
+		"name": "Symfony-API-STAGES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26372216"
+	},
+	"item": [
+		{
+			"name": "Liste des Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "172.30.48.209/API-STAGE/public/api/student",
+					"host": [
+						"172",
+						"30",
+						"48",
+						"209"
+					],
+					"path": [
+						"API-STAGE",
+						"public",
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liste des Company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "172.30.48.209/API-STAGE/public/api/company",
+					"host": [
+						"172",
+						"30",
+						"48",
+						"209"
+					],
+					"path": [
+						"API-STAGE",
+						"public",
+						"api",
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liste des Internship",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "172.30.48.209/API-STAGE/public/api/internship",
+					"host": [
+						"172",
+						"30",
+						"48",
+						"209"
+					],
+					"path": [
+						"API-STAGE",
+						"public",
+						"api",
+						"internship"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ajout d'un Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"PROUX\",\r\n    \"firstname\":\"Ludovic\",\r\n    \"picture\":\"\",\r\n    \"date_of_birth\":\"2000-09-11\",\r\n    \"grade\":\"BTS-SLAM2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "172.30.48.209/API-STAGE/public/api/student",
+					"host": [
+						"172",
+						"30",
+						"48",
+						"209"
+					],
+					"path": [
+						"API-STAGE",
+						"public",
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ajout d'un Company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"CC17 INFORMARTIQUE\",\r\n    \"street\":\"37, rue Dr Paul Peltier\",\r\n    \"zipcode\":\"17300\",\r\n    \"city\":\"ROCHEFORT\",\r\n    \"website\":\"https://www.cc17.fr/\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "172.30.48.209/API-STAGE/public/api/company",
+					"host": [
+						"172",
+						"30",
+						"48",
+						"209"
+					],
+					"path": [
+						"API-STAGE",
+						"public",
+						"api",
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ajout d'un Internship",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"student_id\":2,\r\n    \"company_id\":1,\r\n    \"start_date\":\"2022-01-05\",\r\n    \"end_state\":\"2023-01-05\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "172.30.48.209/API-STAGE/public/api/internship",
+					"host": [
+						"172",
+						"30",
+						"48",
+						"209"
+					],
+					"path": [
+						"API-STAGE",
+						"public",
+						"api",
+						"internship"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

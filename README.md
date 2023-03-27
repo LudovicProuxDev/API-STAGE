@@ -19,15 +19,24 @@ symfony -v
 
 ## Clonage du dépôt<br>
 Choisir l'emplacement de la copie du dossier sur le disque pour effectuer le clonage<br>
+
+SSH :<br>
+
 ```
-git clone <Nom dépôt> 
+git clone git@github.com:LudovicProuxDev/API-STAGE.git
 ```
 
+HTTPS :<br>
+
+```
+git clone https://github.com/LudovicProuxDev/API-STAGE.git
+```
 <br>
 
-## Répertoire de l'API
+## Répertoire et ouverture du dossier
 ```
 cd /<Nom dossier>/API-STAGE
+code .
 ```
 
 <br>
@@ -35,13 +44,17 @@ cd /<Nom dossier>/API-STAGE
 ## Instalation des dépendances PHP
 ```
 composer install
+composer require symfony/apache-pack
+composer require symfony/maker-bundle --dev
+composer require symfony/serializer-pack
+composer require doctrine/annotations
+composer require orm
 ```
 
 <br>
 
 ## Documentation de l'API
-Voir Dossier 'Collection Postman'<br>
-https://documenter.getpostman.com/view/26372285/2s93RKzFtg
+Voir dossier 'CollectionPostman'<br>
 
 <br>
 
