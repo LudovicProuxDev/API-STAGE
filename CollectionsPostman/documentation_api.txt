@@ -1,0 +1,5 @@
+// Lien de la documentation de API-STAGE
+https://documenter.getpostman.com/view/26372285/2s93RKzFtg
+
+// Fichier à utiliser de l'API
+API-STAGES.json
